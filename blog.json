@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tome Time Library Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;  
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            background-image: url('book bg.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.9); /* Adjust background opacity if necessary */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 2rem 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        section h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+
+        blockquote {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #ecf0f1;
+            border-left: 5px solid #2c3e50;
+            font-style: italic;
+            color: #7f8c8d;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1rem 0;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tome Time Library Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#reading-room">Reading Room</a></li>
+                <li><a href="#childrens-section">Children's Section</a></li>
+                <li><a href="#digital-resource-center">Digital Resource Center</a></li>
+                <li><a href="#community-hall">Community Hall</a></li>
+                <li><a href="#cafe">Cafe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome">
+            <h2>Welcome to Tome Time Library Blog</h2>
+            <p>Welcome to the Tome Time Library Blog! Here, you'll find information about our library, its various sections, and the wonderful resources and events we offer. Stay tuned for regular updates and insights into what makes our library a special place for the community.</p>
+        </section>
+
+        <section id="reading room.jpg">
+            <h2>Discover the Serenity of Our Reading Room</h2>
+            <p>Our Reading Room is a haven of peace and quiet, designed for those who love to immerse themselves in a good book. With comfortable seating and a tranquil atmosphere, it’s the perfect spot to read, study, or simply relax. Here’s what some of our regular patrons have to say:</p>
+            <blockquote>"The Reading Room is my favorite place to unwind with a book after a long day."</blockquote>
+            <blockquote>"I love the calm and quiet environment, it helps me focus on my studies."</blockquote>
+            <img src="reading room.jpg" alt="reading room.jpg">
+        </section>
+
+        <section id="children section.jpg">
+            <h2>A World of Imagination in Our Children's Section</h2>
+            <p>Our Children's Section is a vibrant and engaging area filled with colorful books, interactive learning tools, and special programs designed to inspire young minds. From storytelling sessions to educational toys, there’s always something exciting happening here. Hear from some of our young visitors and their parents:</p>
+            <blockquote>"My kids love the storytelling sessions, it's the highlight of their week!"</blockquote>
+            <blockquote>"The interactive toys and colorful books keep my children entertained for hours."</blockquote>
+            <img src="children section.jpg" alt="children section.jpg">
+        </section>
+
+        <section id="digital resource center.jpg">
+            <h2>Maximize Your Learning in Our Digital Resource Center</h2>
+            <p>The Digital Resource Center is equipped with state-of-the-art computers, online databases, and a vast collection of e-books. Whether you’re conducting research or exploring new topics, our digital resources can help you achieve your learning goals. Here are some tips to make the most of these resources:</p>
+            <ul>
+                <li>Take advantage of our online databases for extensive research materials.</li>
+                <li>Use our e-books collection for convenient access to a wide range of books.</li>
+                <li>Attend our workshops to learn how to effectively use digital tools.</li>
+            </ul>
+            <img src="digital resource center.jpg" alt="digital dersource center.jpg">
+        </section>
+
+        <section id="community hall.jpg">
+            <h2>Engage and Connect in Our Community Hall</h2>
+            <p>Our Community Hall is a versatile space that hosts various events, workshops, and group activities. It’s a great place to meet new people, learn new skills, and participate in community gatherings. Check out our calendar for upcoming events and highlights from past gatherings:</p>
+            <ul>
+                <li>Book Club Meetings</li>
+                <li>Art Workshops</li>
+                <li>Community Lectures</li>
+                <li>Children's Activities</li>
+            </ul>
+            <img src="community hall.jpg" alt="community hall.jpg">
+        </section>
+
+        <section id="cafe shop.jpg">
+            <h2>Relax and Refresh in Our Cozy Cafe</h2>
+            <p>Step into our cozy cafe, where every cup is brewed with warmth and every bite is crafted with care. Nestled within the heart of Tome Time Library, our cafe offers not just refreshments, but a place to pause and recharge amidst your library visit.</p>
+            <p>Start your day with the rich aroma of freshly brewed coffee, expertly prepared by our baristas who are passionate about creating the perfect cup for you. Whether you prefer a velvety latte, a robust espresso, or a soothing herbal tea, our menu caters to all tastes and preferences.</p>
+            <p>Indulge your senses with our delectable pastries, baked fresh every morning. From buttery croissants to decadent cakes, each treat is made with the finest ingredients to ensure a delightful experience with every bite. Our selection of light meals, including gourmet sandwiches and fresh salads, provides nourishment that complements your library visit.</p>
+            
+            <img src="cafe shop.jpg" alt="Cafe shop.jpg">
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tome Time Library. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomeTime Library</title>
+</head>
+<style>
+    body {
+    font-family: Georgia, serif;
+    background-color: #b6c9cc;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #3a424f;
+    }
+    .navbar-logo img {
+    height: 60px;
+    }
+    .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar-menu li {
+    margin: 0 15px;
+    }
+    .navbar-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Monaco, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+    }
+    .navbar-menu a:hover {
+    color: #005ab5;
+    }
+    footer {
+    background-color: #3a424f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: dimgray;
+    }
+    
+    .about-1{
+        margin: 30px;
+        padding: 10px;
+        height: 10px;
+        
+    }
+    .about-1 h1{
+        text-align: center;
+        color: black;
+        font-weight: bold;
+    }
+    .about-1 p{
+        text-align: center;
+        padding: 3px;
+        color: #fff;
+    }
+    .about-item{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        background-color: white;
+        padding: 80px,30px;
+        box-shadow: 0 0 9px rgba(0,0,0 .6);
+        border-radius: 20px;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    .about-item i{
+        font-size: 43px;
+        margin: 0;
+    }
+    .about-item h3{
+        font-size: 25px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        
+    }
+    .about-item p{
+        margin-top: 5px;
+        text-align: center;
+        padding: 30px;
+        
+    }
+    .about-item:hover{
+        background-color: rgb(37, 139, 139);
+    }
+    .about-item:hover i,
+    .about-item:hover h3,
+    .about-item:hover p{
+        color: #fff;
+    }
+    
+    .about-item:hover i{
+        transform: translateY(-20px);
+    }
+    .about-item:hover i,
+    .about-item:hover h3{
+        transition: all 400ms ease-in-out;
+    }
+    .about-2{
+        margin: 10px;
+        padding: 25px;
+    }
+    .context-box-lg{
+        margin:auto;
+    }
+    .container{
+        margin: 20px;
+    }
+    .row{
+        margin: 50px;
+    }
+    .col-md-4{
+        box-sizing: initial;
+    }
+    .wrapper{
+        background:cornsilk;
+        width: 94%;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 30px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    }
+    .wrapper h2{
+        text-align: center;
+    }
+    .wrapper hr{
+        width: 100px;
+        margin: 10px auto;
+    }
+    .team{
+        display: flex;
+    }
+    .team-mem{
+        margin: 8px;
+    }
+    .team-mem h4{
+        text-align: center;
+    }
+    .team-mem p{
+        text-align: center;
+    }
+    img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: 10px;
+        margin-left: 50px;
+    }
+</style>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+        <img src="logo.jpg" alt="TomeTime Library"> 
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="index.html" onclick="showSection('home')">Home</a></li>
+            <li><a href="aboutus2.html" onclick="showSection('aboutus')">About Us</a></li>
+            <li><a href="Mick tometime.html" onclick="showSection('service')">Service</a></li>
+            <li><a href="Johan Tome Time/JJ VSCODE/blog.html" onclick="showSection('blogpost')">Blogpost</a></li>
+            <li><a href="materialcollection2.html" onclick="showSection('materialcollection')">Material Collection</a></li>
+            <li><a href="feedback2.html" onclick="showSection('feedback')">Feedback</a></li>
+        </ul>
+</header>
+
+<section id="aboutus">
+    <div class="about-1">
+        <h1>ABOUT US</h1>
+        <p>Welcome to TomeTime Library! your ultimate online library destination.</p>
+        <p>  Our website is designed to offer a comprehensive suite of features aimed at enhancing your experience and supporting your learning journey.</p>
+        
+    </div>
+    <div class="about-2">
+        <div class="content-box-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about-item text-center">
+                            <i class="fa fa-book"></i>
+                            <h3>VISION</h3>
+                            <hr>
+                            <p>To be the most inclusive and welcoming online library, fostering a vibrant community of learners and readers of all ages by providing seamless access to knowledge and resources.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about-item text-center">
+                            <i class="fa fa-globe"></i>
+                            <h3>MISSION</h3>
+                            <hr>
+                            <p>Our mission is to enhance the library experience for our users by offering comprehensive features, real-time support, and a vast collection of curated materials. We are dedicated to continuous improvement through user feedback, staying updated with the latest industry trends, and maintaining an accessible and friendly platform for all.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about-item text-center">
+                            <i class="fa fa-pencil"></i>
+                            <h3>OUR COMMITMENT</h3>
+                            <hr>
+                            <p>TomeTime Library is designed to be inclusive and accessible to users of all ages, from children to adults. We encourage informal conversations and relationships within our community, fostering a welcoming and friendly atmosphere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <h2>Meet Our Team</h2>
+        <hr>
+        <div class="team">
+            <div class="team-mem">
+                <img src="mick.jpg">
+                <h4>Mr. Mickronli</h4>
+                <p>Web Manager</p>
+            </div>
+            <div class="team-mem">
+                <img src="iqin.jpg">
+                <h4>Ms. Asyiqin</h4>
+                <p>Web Developer</p>
+            </div>
+            <div class="team-mem">
+                <img src="may.jpg">
+                <h4>Ms. May</h4>
+                <p>Administrator</p>
+            </div>
+            <div class="team-mem">
+                <img src="mira.jpg">
+                <h4>Ms. Amirah</h4>
+                <p>Administrative Assistant</p>
+            </div>
+            <div class="team-mem">
+                <img src="najwa.jpg">
+                <h4>Ms. Najwa</h4>
+                <p>Librarian Assistant</p>
+            </div>
+            <div class="team-mem">
+                <img src="jj.jpg">
+                <h4>Mr. Johan</h4>
+                <p>Operation Assistant</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+</body>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 TOMETIME LIBRARY. All rights reserved.</p>
+    </div>
+</footer>
+</html>

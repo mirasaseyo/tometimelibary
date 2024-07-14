@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('background.jpg') no-repeat center center;
+            background-size: cover;
+            filter: blur(15px);
+            z-index: -1;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            text-align: center;
+            margin: 20px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4em;
+            margin-top: 20px;
+            background-color: powderblue; /* Added background color */
+        }
+        .paragraph {
+            margin: 20px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+        }
+        .service-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 20px;
+            margin: 20px auto;
+            font-family: 'Lato', sans-serif;
+            font-size: 2em;
+            text-decoration: none;
+            color: white;
+            background-color: #0073ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: fit-content;
+        }
+        .description, .information {
+            margin: 20px auto;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+        }
+        .information {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+        }
+        audio {
+            display:run-in
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .quote {
+            display: none;
+            font-size: 1.2em;
+            font-family: 'Playfair Display', serif;
+        }
+        .quote.active {
+            display: block;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <audio src="BGM 🧁Yummy Flavor _ Cute _ Sweet _ Happy Background Music.mp3" autoplay loop></audio>
+    
+    <div class="content">
+        <h1>TOME TIME LIBRARY SERVICES</h1>
+        <div class="paragraph">
+            The Service Library is an integrated platform designed to enhance your user experience by offering a range of comprehensive and user-friendly services. It features a Real-Time Chat 24/7 service, enabling you to connect with our support team or fellow users anytime, ensuring immediate assistance around the clock. Our FAQ Section provides quick and easy answers to common questions, covering an extensive range of topics to offer instant solutions, thereby reducing the need for direct support. Stay informed with our Blog, which keeps you updated with the latest news, expert advice, and industry trends, providing engaging and informative content. Access a wealth of resources through our Material Collection, including tutorials, guides, and reference materials curated to support your learning and growth. We value your feedback and encourage you to share your insights to help improve our services and shape the future of our platform. Lastly, join us at our Upcoming Event to celebrate the joy of reading at the Bookstack Studio, fostering a sense of community and shared passion for literature. Each service is carefully designed to provide maximum convenience, efficiency, and support, making the Service Library an essential tool for all your informational and interactive needs.
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <div class="quote active">
+                <p>"I have always imagined that Paradise will be a kind of a Library." - Jorge Luis Borges</p>
+            </div>
+            <div class="quote">
+                <p>"Nothing is pleasanter than exploring a library." - Walter Savage Landor</p>
+            </div>
+            <div class="quote">
+                <p>"Experience is the name everyone gives to their mistakes." - Oscar Wilde</p>
+            </div>
+            <div class="quote">
+                <p>"In order to be irreplaceable, one must always be different." - Coco Chanel</p>
+            </div>
+            <div class="quote">
+                <p>"Bad libraries build collections, good libraries build services, great libraries build communities." - R. David Lankes</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Service buttons and descriptions -->
+        <button class="service-button" onclick="toggleInfo('chat')"><i class="fas fa-comments"></i> Real-Time Chat 24/7</button>
+        <div class="description">
+            Connect with our support team or fellow users any time of the day. We're here to assist you around the clock, ensuring you get the help you need whenever you need it.
+        </div>
+        <div class="information" id="chat">
+            <img src="ask.us.jpg" alt="Real-Time Chat">
+            <p><strong>Availability:</strong> Always accessible</p>
+            <p><strong>Support:</strong> Connect with support team or fellow users</p>
+            <p><strong>Assistance:</strong> Immediate help anytime</p>
+            <p><strong>Convenience:</strong> Ensures you get help when needed</p>
+            <p>This service allows you to reach out to our support team or interact with other users at any time. Whether it's a technical issue or a general question, we're available 24/7 to provide immediate assistance, ensuring you never face a problem alone.</p>
+        </div>
+
+        <button class="service-button" onclick="toggleInfo('faq')"><i class="fas fa-question-circle"></i> FAQ Section</button>
+        <div class="description">
+            Find answers to common questions quickly and easily with our extensive FAQ section. Covering a wide range of topics, it provides instant solutions to your queries.
+        </div>
+        <div class="information" id="faq">
+            <img src="FAQ.jpg" alt="FAQ Section">
+            <p><strong>Comprehensive:</strong> Extensive range of topics</p>
+            <p><strong>Efficiency:</strong> Quick and easy answers</p>
+            <p><strong>Self-help:</strong> Instant solutions</p>
+            <p><strong>Resourceful:</strong> Reduces the need for direct support</p>
+            <p>Our FAQ section is designed to provide quick answers to common questions. It covers a wide range of topics, allowing you to find solutions instantly without waiting for support, making it a valuable resource for immediate assistance.</p>
+        </div>
+
+        <button class="service-button" onclick="toggleInfo('blog')"><i class="fas fa-blog"></i> Blog</button>
+        <div class="description">
+            Stay updated with the latest news, tips, and insights from our blog. Whether you're looking for expert advice or industry trends, our blog has you covered.
+        </div>
+        <div class="information" id="blog">
+            <img src="Library-Blogs.jpg" alt="Blog">
+            <p><strong>Updates:</strong> Latest news</p>
+            <p><strong>Insights:</strong> Expert advice</p>
+            <p><strong>Trends:</strong> Industry updates</p>
+            <p><strong>Engaging:</strong> Informative content</p>
+            <p>Our blog keeps you informed with the latest news and trends in the industry. From expert advice to insightful articles, it's a valuable resource for staying updated and gaining new perspectives.</p>
+        </div>
+
+        <button class="service-button" onclick="toggleInfo('material')"><i class="fas fa-book"></i> Material Collection</button>
+        <div class="description">
+            Access a wealth of resources including tutorials, guides, and reference materials. Our collection is curated to support your learning and growth.
+        </div>
+        <div class="information" id="material">
+            <img src="material collection.jpg" alt="Material Collection">
+            <p><strong>Resources:</strong> Tutorials, guides, references</p>
+            <p><strong>Support:</strong> Curated for learning and growth</p>
+            <p><strong>Comprehensive:</strong> Wide range of materials</p>
+            <p><strong>Accessibility:</strong> Easy to access and use</p>
+            <p>Our material collection offers a wide range of resources to support your learning journey. From tutorials and guides to reference materials, it's designed to provide comprehensive support and help you grow.</p>
+        </div>
+
+        <button class="service-button" onclick="toggleInfo('feedback')"><i class="fas fa-comments"></i> Feedback</button>
+        <div class="description">
+            Share your insights and help us improve. Your feedback is valuable in shaping the future of our services.
+        </div>
+        <div class="information" id="feedback">
+            <img src="feedbacks.jpg" alt="Feedback">
+            <iframe width="620" height="445" src="https://www.youtube.com/embed/PiTRFidDlVg?si=Rm8C6AoFfu9HYnFV">
+            </iframe>
+            <p><strong>Valuable:</strong> Helps improve services</p>
+            <p><strong>Insightful:</strong> Share your opinions</p>
+            <p><strong>Interactive:</strong> Engage with us</p>
+            <p><strong>Impactful:</strong> Shape the future</p>
+            <p>Your feedback is crucial in helping us improve our services. By sharing your insights, you can make a significant impact and contribute to the future development of our platform.</p>
+        </div>
+
+        <button class="service-button" onclick="toggleInfo('event')"><i class="fas fa-calendar-alt"></i> Upcoming Event</button>
+        <div class="description">
+            Join us at our next event to celebrate the joy of reading at Bookstack Studio. Be a part of our community and share your love for literature.
+        </div>
+        <div class="information" id="event">
+            <img src="upcoming event.jpg" alt="Upcoming Event1">
+            <img src="upcoming.jpg" alt="Upcoming Event2">
+            <img src="book-club-template-design_23-2151477935.avif" alt="Upcoming Event3">
+            <p><strong>Celebration:</strong> Joy of reading</p>
+            <p><strong>Community:</strong> Join fellow book lovers</p>
+            <p><strong>Engagement:</strong> Participate in events</p>
+            <p><strong>Passion:</strong> Share your love for literature</p>
+            <p>Join us at our upcoming event to celebrate the joy of reading. It's an opportunity to connect with fellow book lovers, participate in engaging activities, and share your passion for literature.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            var info = document.getElementById(id);
+            if (info.style.display === 'none' || info.style.display === '') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("quote");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].classList.add("active");
+            setTimeout(showSlides, 5000); // Change slide every 5 seconds
+        }
+
+        function plusSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("quote");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex += n;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            if (slideIndex < 1) {slideIndex = slides.length}
+            slides[slideIndex-1].classList.add("active");
+        }
+    </script>
+</body>
+</html>

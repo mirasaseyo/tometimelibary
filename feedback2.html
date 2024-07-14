@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomeTime Library</title>
+    <script src="https://kit.fontawesome.com/89a0f098ca.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    body {
+    font-family: Georgia, serif;
+    background-color: #b6c9cc;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #3a424f;
+    }
+    .navbar-logo img {
+    height: 60px;
+    }
+    .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar-menu li {
+    margin: 0 15px;
+    }
+    .navbar-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Monaco, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+    }
+    .navbar-menu a:hover {
+    color: #005ab5;
+    }
+    footer {
+    background-color: #3a424f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+.contact-container{
+    height: 70vh;
+    display:block;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 80px;
+    margin-top: 1px;
+    position: relative;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction:column;
+    align-items: start;
+    gap: 25px;
+}
+
+.contact-left title h2{
+    font-weight: 600;
+    color: #1869b0;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left h2{
+    font-weight: 600;
+    color:rgb(25, 99, 99);
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: rgb(149, 181, 210);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+
+}
+
+.contact-inputs{
+    width: 600px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-weight: 500;
+    color:darkslategrey;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.contact-inputs :focus{
+    border: 2px solid  antiquewhite;
+}
+
+.contact-inputs::placeholder{
+    color:rgb(23, 32, 32);
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: rgb(238, 233, 227);
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background:rgb(37, 139, 139);
+    cursor: pointer;
+}
+
+.contact-left button img{
+    height: 15px;
+}
+
+@media(max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+#msg{
+    color: rgb(215, 233, 227);
+    margin-top: -40px;
+    display: block;
+}
+
+.icon{
+    position: absolute;
+    top: 50%;
+    padding: 0 95%;
+    bottom: 10%;
+    transform: translateY(-50%);
+}
+
+.icon i{
+    display: block;
+    margin: 50px 0;
+    font-size: 25px;
+    color: rgb(234, 237, 241);
+    transition: all .50s ease;
+}
+
+.icon i:hover{
+    color:rgb(37, 139, 139);
+    transform: translateY(-5px);
+}
+
+
+.html,body{
+    overflow-x: hidden;
+}
+
+.anime{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+</style>
+
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+        <img src="logo.jpg" alt="TomeTime Library"> 
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="index.html" onclick="showSection('home')">Home</a></li>
+            <li><a href="aboutus2.html" onclick="showSection('aboutus')">About Us</a></li>
+            <li><a href="Mick tometime.html" onclick="showSection('service')">Service</a></li>
+            <li><a href="Johan Tome Time/JJ VSCODE/blog.html" onclick="showSection('blogpost')">Blogpost</a></li>
+            <li><a href="materialcollection2.html" onclick="showSection('materialcollection')">Material Collection</a></li>
+            <li><a href="feedback2.html" onclick="showSection('feedback')">Feedback</a></li>
+        </ul>
+</header>
+
+<div class="contact-container">
+    <form action="" class="contact-left" name="submit-to-google-sheet">
+        <div class="contact-left-title">
+            <h2 class="anime">Get in touch with us!</h2>
+            <hr></div>
+            <input type="text" name="Name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="Email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit"> Submit <img src="arrow.png" alt=""></button>
+
+    </form>
+    <span id="msg"></span>
+    <div class="contact-right">
+        <img src="" alt="">
+
+    </div>
+</div>
+
+
+<div class="icon">
+    <div class="anime">
+    <i class="fa-regular fa-envelope"></i></a>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i></a>
+    <i class="fa-brands fa-tiktok"></i>
+    <i class="fa-brands fa-youtube"></i></a></div>
+</div>    
+    
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyWPVnK_QbMPfZ31TO9t5iE15JiLl7KOwbBi_l_t_Z3QfwIEIWAx7GQ2w25XtblMVk/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        } )
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 TOMETIME LIBRARY. All rights reserved.</p>
+    </div>
+</footer>
+</html>

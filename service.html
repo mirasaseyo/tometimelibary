@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomeTime Library</title>
+</head>
+<style>
+    body {
+    font-family: Georgia, serif;
+    background-color: #b6c9cc;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #3a424f;
+    }
+    .navbar-logo img {
+    height: 60px;
+    }
+    .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar-menu li {
+    margin: 0 15px;
+    }
+    .navbar-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Monaco, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+    }
+    .navbar-menu a:hover {
+    color: #005ab5;
+    }
+    footer {
+    background-color: #3a424f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+</style>
+<header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+        <img src="logo.jpg" alt="TomeTime Library"> 
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="file:///C:/tometime/index.html" onclick="showSection('home')">Home</a></li>
+            <li><a href="file:///C:/tometime/aboutus.html" onclick="showSection('aboutus')">About Us</a></li>
+            <li><a href="file:///C:/tometime/service.html" onclick="showSection('service')">Service</a></li>
+            <li><a href="file:///C:/tometime/blogpost.html" onclick="showSection('blogpost')">Blogpost</a></li>
+            <li><a href="file:///C:/tometime/materialcollection.html" onclick="showSection('materialcollection')">Material Collection</a></li>
+            <li><a href="file:///C:/tometime/feedback.html" onclick="showSection('feedback')">Feedback</a></li>
+        </ul>
+</header>
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 TOMETIME LIBRARY. All rights reserved.</p>
+    </div>
+</footer>
+</html>

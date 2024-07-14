@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomeTime Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Georgia, serif;
+    background-color: #b6c9cc;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #3a424f;
+    }
+    .navbar-logo img {
+    height: 60px;
+    }
+    .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar-menu li {
+    margin: 0 15px;
+    }
+    .navbar-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Monaco, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+    }
+    .navbar-menu a:hover {
+    color: #005ab5;
+    }
+    footer {
+    background-color: #3a424f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    body{
+        background-color: dimgray;
+    }
+    
+    .about-1{
+        margin: 30px;
+        padding: 10px;
+        height: 10px;
+        
+    }
+    .about-1 h1{
+        text-align: center;
+        color: black;
+        font-weight: bold;
+    }
+    .about-1 p{
+        text-align: center;
+        padding: 3px;
+        color: #fff;
+    }
+    .about-item{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        background-color: white;
+        padding: 80px,30px;
+        box-shadow: 0 0 9px rgba(0,0,0 .6);
+        border-radius: 20px;
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
+    .about-item i{
+        font-size: 43px;
+        margin: 0;
+    }
+    .about-item h3{
+        font-size: 25px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        
+    }
+    .about-item p{
+        margin-top: 5px;
+        text-align: center;
+        padding: 30px;
+        
+    }
+    .about-item:hover{
+        background-color: rgb(37, 139, 139);
+    }
+    .about-item:hover i,
+    .about-item:hover h3,
+    .about-item:hover p{
+        color: #fff;
+    }
+    
+    .about-item:hover i{
+        transform: translateY(-20px);
+    }
+    .about-item:hover i,
+    .about-item:hover h3{
+        transition: all 400ms ease-in-out;
+    }
+    .about-2{
+        margin: 10px;
+        padding: 25px;
+    }
+    .context-box-lg{
+        margin:auto;
+    }
+    .container{
+        margin: 20px;
+    }
+    .row{
+        margin: 50px;
+    }
+    .col-md-4{
+        box-sizing: initial;
+    }
+    .wrapper{
+        background:cornsilk;
+        width: 94%;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 30px;
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    }
+    .wrapper h2{
+        text-align: center;
+    }
+    .wrapper hr{
+        width: 100px;
+        margin: 10px auto;
+    }
+    .team{
+        display: flex;
+    }
+    .team-mem{
+        margin: 8px;
+    }
+    .team-mem h4{
+        text-align: center;
+    }
+    .team-mem p{
+        text-align: center;
+    }
+    img{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        margin: 10px;
+        margin-left: 50px;
+    }
+</style>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+        <img src="logo.jpg" alt="TomeTime Library"> 
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="index.html" onclick="showSection('home')">Home</a></li>
+            <li><a href="aboutus2.html" onclick="showSection('aboutus')">About Us</a></li>
+            <li><a href="Mick Tome Time/Mick tometime.html" onclick="showSection('service')">Service</a></li>
+            <li><a href="Johan Tome Time/JJ VSCODE/blog.html" onclick="showSection('blogpost')">Blogpost</a></li>
+            <li><a href="materialcollection2.html" onclick="showSection('materialcollection')">Material Collection</a></li>
+            <li><a href="feedback2.html" onclick="showSection('feedback')">Feedback</a></li>
+        </ul>
+</header>
+
+<!-- ----------portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">MATERIAL COLLECTIONS</h1>
+        <div class="material collections-list">
+            <div class="materialcollections">
+                <img src="REFERENCE MATERIAL.jpeg">
+                <div class="layer">
+                    <h3>REFERENCE MATERIAL</h3>
+                    <p> Reference collections include dictionaries, encyclopedia, alamanacs, and other resources that provide quick access to factual information and support research.
+                    </p>
+                    <a href="https://youtu.be/7tYdAHhWalw?si=Z3t0NkefGvzMSkhE" target="click"></a> 
+                </div>
+            </div>
+            <div class="materialcollections">
+                <img src="EDUCATIONAL RESOURCES.jpeg">
+                <div class="layer">
+                    <h3>EDUCATIONAL RESOURCES</h3>
+                    <p> Our libraries provide educational resources such as text books, study guides, test prep materials, and online courses to support academic learning and lifelong education.
+                    </p>
+                    <a href="https://youtu.be/pFaiZBgxpCc?si=1BL9vMkNHvhevKI9" target="_blank"></a>
+                </div>
+            </div>
+            <div class="materialcollections">
+                <img src="SPECIAL COLLECTION.jpeg">
+                <div class="layer">
+                    <h3>SPECIAL COLLECTION AND ARCHIVES</h3>
+                    <p> Many libraries house special collections and archives that preserve rare, valuable, or culturally significant materials which include manuscripts, historical documents, photographs, and artifacts.
+                    </p>
+                    <a href="https://youtu.be/8RWAOajffZg?si=T7wXVoO9I7WxOzej" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+   
+        <a href="#" class="btn">See more
+        <a href="IMAGE MATERIAL/MATERIAL COLLECTIONS POSTER.png" target="_blank"></a>
+    </div>
+</div>
+</body>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 TOMETIME LIBRARY. All rights reserved.</p>
+    </div>
+</footer>
+</html>
+
+
+
+

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TomeTime Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+    font-family: Georgia, serif;
+    background-color: #b6c9cc;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #3a424f;
+    }
+    .navbar-logo img {
+    height: 60px;
+    }
+    .navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    }
+    .navbar-menu li {
+    margin: 0 15px;
+    }
+    .navbar-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-family: Monaco, monospace;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+    }
+    .navbar-menu a:hover {
+    color: #005ab5;
+    }
+    .responsive {
+    width: 100%;
+    height: auto;
+    }
+    aside {
+    width: 20%;
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    float: right;
+    font-family: Monaco, monospace;
+    font-size: medium;
+    background-color: #f9f9f9;
+    }
+    .video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    }
+    video {
+    max-width: 100%;
+    height: auto;
+    }
+    h2 {
+    font-family: Copperplate, fantasy;
+    }
+    
+    .Newsa {
+    background-color: rgb(190, 204, 235);
+    color: black;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    
+    }
+    .Newsb {
+    background-color: rgb(190, 204, 235);
+    color: black;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+    text-align: left;
+    }
+    /* Button used to open the chat form - fixed at the bottom of the page */
+    .open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    }
+
+    /* The popup chat - hidden by default */
+    .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    }
+
+    /* Add styles to the form container */
+    .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    }
+
+    /* Full-width textarea */
+    .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+    }
+
+    /* When the textarea gets focus, do something */
+    .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+
+    /* Set a style for the submit/send button */
+    .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    }
+
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+    background-color: red;
+    }
+
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    }
+    footer {
+    background-color: #3a424f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+</style>
+
+<header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+        <img src="logo.jpg" alt="TomeTime Library"> 
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="index.html" onclick="showSection('home')">Home</a></li>
+            <li><a href="aboutus2.html" onclick="showSection('aboutus')">About Us</a></li>
+            <li><a href="Mick tometime.html" onclick="showSection('service')">Service</a></li>
+            <li><a href="Johan Tome Time/JJ VSCODE/blog.html" onclick="showSection('blogpost')">Blogpost</a></li>
+            <li><a href="materialcollection2.html" onclick="showSection('materialcollection')">Material Collection</a></li>
+            <li><a href="feedback2.html" onclick="showSection('feedback')">Feedback</a></li>
+        </ul>
+
+</header>
+    
+    <img src="quotes.png" alt="img" class="responsive">
+
+    <aside>
+        <h1>🌟Operational Hours🌟</h1>
+        <p>WEEKDAYS:
+        <p>Monday-Friday: 9:00AM - 8:00PM</p>
+        <p>WEEKEND:</p> 
+        <p>Saturday: 10:00AM - 6:00PM</p>
+        <p>Sunday: 12:00PM - 5:00PM</p>
+        <p>HOLIDAYS:</p>
+        <p>Closed on Major Holidays.</p>
+        <p>Special Holiday Hours will be announced in advance.</p>
+    </aside>
+    <div class="Video">
+        <h2>What Librarians Wish You Knew About Libraries</h2>
+        <video width="900" controls>
+            <source src="Video.mp4" type="video/mp4">       
+        </div>   
+    <h2>DISCOVER</h2>
+    <div class="Newsa">
+        <h3>Virtual Events and Workshops</h3>
+        <p>1.Author Talks: Connect with your favorite authors and discover new voices through our virtual author talks. Hear about their latest books, writing process, and insights into their literary worlds.</p>
+        <p>2.DIY Workshops: Get creative with our DIY workshops covering a wide range of interests. From crafting and cooking demonstrations to home improvement and gardening tips, there something for everyone to enjoy and learn from.</p>
+        <p>3.Educational Webinars: Dive into educational webinars on diverse topics such as history, science, technology, health, and more. Expert speakers will share their knowledge and expertise, offering you opportunities to expand your understanding and skills.</p>
+    </div> 
+    <div class="Newsb">
+        <h3>Community Forums</h3>
+        <p>1.Share Recommendations: Discover new books and share your favorites with others. Whether you’re into fiction, non-fiction, mysteries, or sci-fi, our forums are the place to exchange recommendations and find your next great read.</p>
+        <p>2.Discuss Latest Reads: Engage in discussions about the books you’ve recently finished. Share your thoughts on characters, plot twists, and themes, and hear what others have to say.</p>
+        <p>3.Book Club Discussions: Join or start book clubs within the forums. Choose a book to read together, set reading milestones, and discuss chapters or the entire book in dedicated threads.</p>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+    <div class="chat-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Hello There! How can I help you?</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+    </div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</body>
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 TOMETIME LIBRARY. All rights reserved.</p>
+    </div>
+</footer>
+</html>
+
+
